@@ -1,6 +1,6 @@
 Type: Package
 Package: sortable
-Title: Drag-and-Drop in 'shiny' Apps with 'SortableJS'
+Title: Drag-and-Drop in 'shiny' Apps with 'SortableJS' (adjusted for use in MIRO)
 Version: 0.4.2.9000
 Date: 2019-11-28
 Authors@R: 
@@ -12,6 +12,10 @@ Authors@R:
              family = "Schloerke",
              role = "aut",
              email = "barret@rstudio.com"),
+      person(given = "Frederik",
+             family = "Proske",
+             role = "aut",
+             email = "fproske@gams.com"),
       person(given = "Kenton",
              family = "Russell",
              role = c("aut", "ccp"),
@@ -34,7 +38,6 @@ BugReports: https://github.com/rstudio/sortable/issues
 Imports:
     htmltools,
     htmlwidgets,
-    learnr (>= 0.10.0),
     shiny,
     assertthat,
     jsonlite,
