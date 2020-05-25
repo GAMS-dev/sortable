@@ -48,7 +48,7 @@ sortable_js_capture_input <- function(input_id) {
   )
   js_text <- "function(evt) {
   if (typeof Shiny !== \"undefined\") {
-    Shiny.setInputValue(\"%s:sortablejs.rank_list\", %s)
+    Shiny.setInputValue(\"%s:sortablejs.rank_list\", %s, { priority: \"event\" })
   }
 }"
 
@@ -90,7 +90,7 @@ sortable_js_capture_bucket_input <- function(input_id, input_ids, css_ids) {
       ret[input_id] = undefined;
     }
   });
-  Shiny.setInputValue(\"%s:sortablejs.bucket_list\", ret)
+  Shiny.setInputValue(\"%s:sortablejs.bucket_list\", ret, { priority: \"event\" })
 }"
 
   js <- sprintf(
